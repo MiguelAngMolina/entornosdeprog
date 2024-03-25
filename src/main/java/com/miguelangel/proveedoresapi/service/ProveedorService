@@ -1,11 +1,11 @@
-package com.miguelangel.tiendaentornos.service;
+package com.miguelangel.proveedoresapi.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 
-import com.miguelangel.tiendaentornos.model.Proveedora;
-import com.miguelangel.tiendaentornos.repository.ProveedorRepository;
+import com.miguelangel.proveedoresapi.model.Proveedor;
+import com.miguelangel.proveedoresapi.repository.ProveedorRepository;
 
 import java.util.List;
 import java.util.Optional;
@@ -16,17 +16,17 @@ public class ProveedorService {
     @Autowired
     private ProveedorRepository proveedorRepository;
 
-    public List<Proveedora> findAll() {
+    public List<Proveedor> findAll() {
         return proveedorRepository.findAll();
     }
 
     @SuppressWarnings("null")
-    public Optional<Proveedora> findById(Long id) {
+    public Optional<Proveedor> findById(Long id) {
         return proveedorRepository.findById(id);
     }
 
     @SuppressWarnings("null")
-    public Proveedora save(Proveedora proveedor) {
+    public Proveedora save(Proveedor proveedor) {
         return proveedorRepository.save(proveedor);
     }
 

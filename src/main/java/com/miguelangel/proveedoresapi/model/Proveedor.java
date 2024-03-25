@@ -1,17 +1,16 @@
-package com.miguelangel.tiendaentornos.model;
+package com.miguelangel.proveedoresapi.model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
-import org.springframework.context.annotation.ComponentScan;
 
-@ComponentScan
-@Entity
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
 @Table(name = "proveedor")
-public class Proveedora {
+@Entity
+public class Proveedor{
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

@@ -1,4 +1,4 @@
-package com.miguelangel.tiendaentornos.exception;
+package com.miguelangel.proveedoresapi.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;

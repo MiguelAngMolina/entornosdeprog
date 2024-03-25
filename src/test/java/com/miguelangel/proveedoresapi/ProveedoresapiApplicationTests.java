@@ -1,10 +1,10 @@
-package com.miguelangel.tiendaentornos;
+package com.miguelangel.proveedoresapi;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class TiendaentornosApplicationTests {
+class ProveedoresapiApplicationTests {
 
 	@Test
 	void contextLoads() {
